@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Grid, Typography, Box } from '@mui/material';
+import { Route, Routes } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
 
@@ -22,19 +23,25 @@ const Authentication = () => {
         <Box p={2}>
           <Card style={{ backgroundColor: '#fff', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
             <Box p={4}>
+
               <Typography variant="h5" align="center" gutterBottom style={{ color: '#333' }}>
                 Social Sphere
               </Typography>
+
               <Box mb={4}>
                 <Typography variant="body1" align="center" paragraph style={{ color: '#666' }}>
                   Introducing SocialSphere, a specialized social platform for coders. Engage in tech discussions, share insights, and collaborate within our vibrant community.
                 </Typography>
               </Box>
+
               <Box mb={4}>
-                {/* Add spacing between email container, password container, and login button */}
-                {/* <Login /> */}
-                <Register></Register>
+                <Routes>
+                <Route path='/' element={<Login/>}></Route>
+                  <Route path='/login' element={<Login/>}></Route>
+                  <Route path='/signup' element={<Register/>}></Route>
+                </Routes>
               </Box>
+
             </Box>
           </Card>
         </Box>

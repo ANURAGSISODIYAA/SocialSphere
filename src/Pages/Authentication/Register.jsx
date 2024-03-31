@@ -7,6 +7,9 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 import Radio from '@mui/material/Radio';
+import { useDispatch } from 'react-redux';
+import { userRegisterAction } from '../../Redux/Auth/auth.action';
+import { useNavigate } from 'react-router-dom';
 
 const initialValues = {
   firstName: '',
@@ -25,11 +28,17 @@ const validationSchema = Yup.object({
 });
 
 const Register = () => {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleSubmit = (values) => {
+    console.log('Handle submit called');
     console.log('Form values:', values);
+    dispatch(userRegisterAction({data:values}));
   };
 
   return (
+    <>
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
@@ -98,6 +107,12 @@ const Register = () => {
         </Button>
       </Form>
     </Formik>
+
+      <div className='flex gap-2 items-center justify-center pt-5'>
+        <p>Already have account ?</p>
+        <Button onClick={()=>navigate("/login")}>Login</Button>
+      </div>
+    </>
   );
 };
 

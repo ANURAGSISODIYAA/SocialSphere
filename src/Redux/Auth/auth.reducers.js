@@ -1,7 +1,29 @@
-export const Login_Request = "Login_Request"
-export const Login_Success= "Login_Success"
-export const Login_Failure = "Login_Failure"
+import { Login_Failure, Login_Request, Login_Success, Register_Failure, Register_Request, Register_Success } from "./auth.actionType";
 
-export const Register_Request = "Register_Request"
-export const Register_Success= "Register_Success"
-export const Register_Failure = "Register_Failure"
+const initalState = {
+    jwt: null,
+    error:null,
+    loading:false
+}
+
+export const authReducer = (state = initalState, action) => {
+
+    switch (action.type) {
+        case Login_Request:
+        case Register_Request:
+
+            return { ...state, loading: true, error: null }
+
+        case Login_Success:
+        case Register_Success:
+
+             return { ...state, jwt:action.payload, loading:false, error:null}
+
+        case Login_Failure:
+        case Register_Failure:
+
+            return { ...state, loading:false, error:action.payload}
+        default:
+            return state;
+    }
+}
