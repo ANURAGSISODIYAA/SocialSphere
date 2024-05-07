@@ -1,10 +1,26 @@
-import { Button, TextField } from '@mui/material/';
+import { Button, TextField, createTheme } from '@mui/material/';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { userLoginAction } from '../../Redux/Auth/auth.action';
 import { useNavigate } from 'react-router-dom';
 
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: {
+      main: "rgb(88,199,250)"
+    },
+    secondary: {
+      main: "#SA20CB"
+    },
+    background: {
+      main: "#212534",
+      default: "#212534",
+      paper: "#212534"
+    },
+  }
+});
 
 const initialValue = { email: "", password: "" };
 
@@ -24,11 +40,12 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div style={{ backgroundColor: darkTheme.palette.background.default, color: darkTheme.palette.text.primary }}>
       <Formik
         onSubmit={handleSubmit}
         initialValues={initialValue}
         validationSchema={validationSchema}
+        
       >
         <Form>
           <div style={{ marginBottom: '1rem' }}>
@@ -39,6 +56,7 @@ const Login = () => {
               as={TextField}
               variant='outlined'
               fullWidth
+              
             />
             <ErrorMessage name='email' component='div' className='text-red-500' />
           </div>
@@ -58,16 +76,14 @@ const Login = () => {
           <Button sx={{ padding: '.8rem 0rem', marginBottom: '1rem' }} fullWidth type="submit" variant='contained' color='primary'>
             Login
           </Button>
-
-
         </Form>
       </Formik>
 
       <div className='flex gap-2 items-center justify-center pt-5'>
-        <p>If you dont have account</p>
-        <Button onClick={()=>navigate("/signup")}>Register</Button>
+        <p>If you don't have an account</p>
+        <Button onClick={() => navigate("/signup")}>Register</Button>
       </div>
-    </>
+    </div>
   );
 };
 

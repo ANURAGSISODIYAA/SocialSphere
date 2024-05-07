@@ -43,6 +43,7 @@ const Register = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
+      
     >
       <Form>
         <div style={{ marginBottom: '1rem' }}>
