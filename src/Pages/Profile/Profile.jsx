@@ -54,13 +54,13 @@ const Profile = () => {
           </div>
 
           <div className='flex gap-4 items-centre py-3'>
-            <span>6 post</span>
-            <span>63 followers</span>
-            <span>300 following</span>
+            <span>X post</span>
+            <span>Y followers</span>
+            <span>Z following</span>
           </div>
 
           <div>
-            <p>AI engineering || Full Stack development || Ex-abc, xyz, 123</p>
+            <p>User Bio</p>
           </div>
 
           <section>

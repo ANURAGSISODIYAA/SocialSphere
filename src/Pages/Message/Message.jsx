@@ -59,10 +59,10 @@ const Message = () => {
 
 
 
-
+  //https://cozy-determination-production.up.railway.app/
   // use to connect to backend
   useEffect(() => {
-    const sock = new SockJS("http://localhost:8080/ws")
+    const sock = new SockJS("https://cozy-determination-production.up.railway.app/ws")
     const stomp = Stomp.over(sock);
     setStompClient(stomp);
     stomp.connect({}, onConnect, onErr);

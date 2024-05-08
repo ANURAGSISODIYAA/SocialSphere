@@ -8,7 +8,7 @@ const StoryPart = () => {
           <Avatar sx={{ width: "5rem", height: "5rem" }}>
         
           </Avatar>
-          <p>Anurag</p>
+          <p>Story</p>
         </div>
     </div>
   )
