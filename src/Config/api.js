@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_BASE_URL = "https://cozy-determination-production.up.railway.app/"
+export const API_BASE_URL = "https://cozy-determination-production.up.railway.app"
 
 const jwtToken=localStorage.getItem("jwt");
 
