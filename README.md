@@ -1,70 +1,77 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌐 Social Sphere
 
-## Available Scripts
+Introducing SocialSphere, a specialized social platform for coders. Engage in tech discussions, share insights, and collaborate within our vibrant community.
 
-In the project directory, you can run:
+[![Screenshot-2024-05-24-184543.png](https://i.postimg.cc/5ycJ7sHp/Screenshot-2024-05-24-184543.png)](https://postimg.cc/k6yLDFvt)
+## 💡 Why did I build this?
 
-### `npm start`
+ In today's rapidly evolving tech landscape, developers need a dedicated platform to discuss trends, share knowledge, and collaborate on projects. Existing platforms often mix various fields, diluting the focus on coding. Social Sphere aims to provide a dedicated space for coders to engage in meaningful discussions, enhance their skills, and grow together.
+ 
+##  🛠️  Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+  git clone https://github.com/ANURAGSISODIYAA/Social_Sphere_Frontend.git
+```
 
-### `npm test`
+Go to the project directory
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  cd Social_Sphere_Frontend
+```
 
-### `npm run build`
+Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm run start
+```
 
-### `npm run eject`
+## 🥁 Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Create & Engage:** Enable users to create captivating posts, express themselves, and engage through likes, comments, and saved posts effortlessly.
+- **Real-Time Interaction:** Elevate user experience with real-time chat functionality, fostering instant connections and lively conversations.
+- **User Profile Management:** Developed features allowing users to update their profile information easily.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Jwt Authentication:** Implemented Jwt authentication to ensure secure access, including login and registration functionalities.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👩‍💻 Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Client:** Javascript,  React, Redux, TailwindCSS, MUI
 
-## Learn More
+**Server:** Java, Springboot, Spring Security.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Database & Cloud :** MYSQL, Hibernate, Vercel, Railway.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Lessons Learned
 
-### Analyzing the Bundle Size
+While building this project, I deepened my understanding of full-stack development, particularly in integrating a React frontend with a Java Spring Boot backend. I faced challenges in managing state efficiently across the application, which I overcame by leveraging Redux. Additionally, ensuring real-time updates and smooth user experience was achieved through persistent testing and optimization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 📜  License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/ANURAGSISODIYAA/Social_Sphere_Frontend/blob/master/LICENSE)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+##  📣 Feedback
 
-### Deployment
+If you have any feedback, please reach out to us at sisodiyaanurag2121@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+##  💬  Need help ?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contact me on Twitter or linkedin
+
+ [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anurag-sisodiya-64a202252/) 
+ 
+ [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/anuragxsisodiya)
+
